@@ -7,10 +7,13 @@ DIR="problems/$LEVEL/$NAME"
 
 mkdir -p $DIR
 
+# snake_case → PascalCase
+FUNC_NAME=$(echo $NAME | awk -F_ '{for(i=1;i<=NF;i++) printf toupper(substr($i,1,1)) substr($i,2)}')
+
 cat <<EOF > $DIR/solution.go
 package $NAME
 
-func Solution() {
+func $FUNC_NAME() {
 
 }
 EOF
@@ -20,21 +23,60 @@ package $NAME
 
 import "testing"
 
-func TestSolution(t *testing.T) {
+func Test$FUNC_NAME(t *testing.T) {
 
 }
 EOF
 
-cat <<EOF > $DIR/README.md
-# $NAME
+cat <<EOF > $DIR/benchmark_test.go
+package $NAME
 
-## 🧩 Условие
+import "testing"
 
-TODO
-
-## 🏷️ Tags
-
-TODO
+func Benchmark$FUNC_NAME(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        $FUNC_NAME()
+    }
+}
 EOF
 
-echo "Created $DIR"
+cat <<EOF > $DIR/README.md
+# $FUNC_NAME
+
+## Условие
+
+TODO
+
+---
+
+## Примеры
+
+TODO
+
+---
+
+## Подход
+
+TODO
+
+---
+
+## Сложность
+
+* Time:
+* Space:
+
+---
+
+## Идея
+
+TODO
+
+---
+
+## Оригинал условия
+
+[Ссылка](#)
+EOF
+
+echo "Created $DIR with function $FUNC_NAME"
