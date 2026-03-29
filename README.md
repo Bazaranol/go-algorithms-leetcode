@@ -51,3 +51,7 @@ go test ./problems/easy/roman_to_integer
 ## Команда для создания нового решения
 
 ```./scripts/create_problem.sh easy roman_to_integer```
+
+## Команда для запуска всех бенчмарков 
+
+```go test ./... -bench=.```
