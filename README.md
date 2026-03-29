@@ -47,3 +47,7 @@ go test ./problems/easy/roman_to_integer
 
 * Go (Golang)
 * Стандартная библиотека (`testing`)
+
+## Команда для создания нового решения
+
+```./scripts/create_problem.sh easy roman_to_integer```
