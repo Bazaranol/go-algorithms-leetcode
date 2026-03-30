@@ -74,9 +74,9 @@ TODO
 
 ---
 
-## Оригинал условия
+## Оригинал условия из Leetcode
 
-[Ссылка](#)
+[Ссылка на условие](#)
 EOF
 
 echo "Created $DIR with function $FUNC_NAME"
