@@ -55,3 +55,18 @@ go test ./problems/easy/roman_to_integer
 ## Команда для запуска всех бенчмарков 
 
 ```go test ./... -bench=.```
+
+## Установка прекоммит хука
+### Создаем ссылку на гит файл
+```ln -s ../../scripts/pre-commit.sh .git/hooks/pre-commit``` 
+### Делаем исполнительным
+```chmod +x scripts/pre-commit.sh``` 
+
+## Проверка покрытия тестами
+### Команда в консоли
+```go test ./... -cover```
+
+### Как визуализировать
+
+```go test ./... -cover```
+```go tool cover -html=coverage.out```
