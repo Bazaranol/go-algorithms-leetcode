@@ -65,7 +65,7 @@ go test ./problems/easy/roman_to_integer
 ### Либо для всей папки 
 ```chmod +x scripts/*.sh```
 
-## Команда для автогенерации задач в README
+## Команда для автогенерации задач в README 
 ```./scripts/generate_readme.sh```
 
 ## Проверка покрытия тестами
