@@ -62,11 +62,41 @@ go test ./problems/easy/roman_to_integer
 ### Делаем исполнительным
 ```chmod +x scripts/pre-commit.sh``` 
 
+### Либо для всей папки 
+```chmod +x scripts/*.sh```
+
+## Команда для автогенерации задач в README
+```./scripts/generate_readme.sh```
+
 ## Проверка покрытия тестами
 ### Команда в консоли
 ```go test ./... -cover```
 
 ### Как визуализировать
 
-```go test ./... -cover```
+```go test ./... -coverprofile=coverage.out```
 ```go tool cover -html=coverage.out```
+
+---
+
+## Список задач (автогенерируется)
+
+<!-- START_PROBLEMS -->
+
+### Easy
+
+- [Fizz Buzz ](./problems/easy/fizz_buzz)
+- [Palindrome Number ](./problems/easy/palindrome_number)
+- [Roman To Integer ](./problems/easy/roman_to_integer)
+- [To Buy And Sell Stock ](./problems/easy/to_buy_and_sell_stock)
+- [Two Sum ](./problems/easy/two_sum)
+
+### Medium
+
+- [Count Primes ](./problems/medium/count_primes)
+- [Reverse Integer ](./problems/medium/reverse_integer)
+
+### Hard
+
+
+<!-- END_PROBLEMS -->
