@@ -48,13 +48,18 @@ go test ./problems/easy/roman_to_integer
 * Go (Golang)
 * Стандартная библиотека (`testing`)
 
-## Команда для создания нового решения
+## Команды (Makefile)
 
-```./scripts/create_problem.sh easy roman_to_integer```
-
-## Команда для запуска всех бенчмарков 
-
-```go test ./... -bench=.```
+| Команда | Что делает |
+|---|---|
+| `make test` | Запустить все тесты |
+| `make bench` | Запустить все бенчмарки |
+| `make lint` | Запустить линтер (golangci-lint) |
+| `make run name=two_sum` | Тесты одной задачи по имени |
+| `make run-bench name=two_sum` | Бенчмарк одной задачи |
+| `make new level=easy name=climbing_stairs` | Создать новую задачу |
+| `make readme` | Обновить список задач в README |
+| `make cover` | Покрытие тестами с визуализацией |
 
 ## Установка прекоммит хука
 ### Создаем ссылку на гит файл
@@ -64,18 +69,6 @@ go test ./problems/easy/roman_to_integer
 
 ### Либо для всей папки 
 ```chmod +x scripts/*.sh```
-
-## Команда для автогенерации задач в README 
-```./scripts/generate_readme.sh```
-
-## Проверка покрытия тестами
-### Команда в консоли
-```go test ./... -cover```
-
-### Как визуализировать
-
-```go test ./... -coverprofile=coverage.out```
-```go tool cover -html=coverage.out```
 
 ---
 
