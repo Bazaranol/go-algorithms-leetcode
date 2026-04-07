@@ -79,15 +79,27 @@ go test ./problems/easy/roman_to_integer
 ### Easy
 
 - [Fizz Buzz ](./problems/easy/fizz_buzz)
+- [Happy Number ](./problems/easy/happy_number)
+- [Missing Number ](./problems/easy/missing_number)
+- [Move Zeroes ](./problems/easy/move_zeroes)
+- [Number Of One Bits ](./problems/easy/number_of_one_bits)
 - [Palindrome Number ](./problems/easy/palindrome_number)
+- [Power Of Four ](./problems/easy/power_of_four)
+- [Power Of Three ](./problems/easy/power_of_three)
+- [Power Of Two ](./problems/easy/power_of_two)
+- [Remove Duplicates From Sorted Array ](./problems/easy/remove_duplicates_from_sorted_array)
 - [Roman To Integer ](./problems/easy/roman_to_integer)
+- [Single Number ](./problems/easy/single_number)
 - [To Buy And Sell Stock ](./problems/easy/to_buy_and_sell_stock)
 - [Two Sum ](./problems/easy/two_sum)
 
 ### Medium
 
 - [Count Primes ](./problems/medium/count_primes)
+- [Maximum Subarray ](./problems/medium/maximum_subarray)
 - [Reverse Integer ](./problems/medium/reverse_integer)
+- [Three Sum ](./problems/medium/three_sum)
+- [Two Sum 2 ](./problems/medium/two_sum_2)
 
 ### Hard
 
