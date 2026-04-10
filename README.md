@@ -95,9 +95,11 @@ go test ./problems/easy/roman_to_integer
 
 ### Medium
 
+- [Container With Most Water ](./problems/medium/container_with_most_water)
 - [Count Primes ](./problems/medium/count_primes)
 - [Maximum Subarray ](./problems/medium/maximum_subarray)
 - [Reverse Integer ](./problems/medium/reverse_integer)
+- [Sort Colors ](./problems/medium/sort_colors)
 - [Three Sum ](./problems/medium/three_sum)
 - [Two Sum 2 ](./problems/medium/two_sum_2)
 
